@@ -1,0 +1,9 @@
+.container_notas{
+    background-color: blueviolet;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+

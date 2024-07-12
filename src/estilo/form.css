@@ -1,0 +1,27 @@
+/* @media (max-width: 480px){ */
+.form_notas{
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 95vw;
+    height: 60vh;
+    border-radius: 20px;
+}
+
+.input_notas{
+    width: 90vw;
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    height: 2.5rem;
+}
+
+.botao_notas{
+    width: 25vw;
+    height: 5vh;
+    margin: 1rem auto;
+    border-radius: 20px;
+    border: none;
+}
