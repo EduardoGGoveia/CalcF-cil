@@ -1,9 +1,0 @@
-.container_result{
-    display: flex;
-    background-color: coral;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 20vh;
-    width: 70vw;
-}
