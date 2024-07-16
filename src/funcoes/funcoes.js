@@ -28,14 +28,14 @@ function mostraResultado() {
             let exameFinal = calculaExameFinal(mediaSemestral.toFixed(2));
             resultado.innerHTML = `
                 <h2 class="modal_mensagem" >Você está de:</h2>        
-                <h3 class="modal_resultado_semestre resultado_aprovado">EXAME FINAL</h3>
+                <h3 class="modal_resultado_semestre resultado_exame_final">EXAME FINAL</h3>
                 <p class="modal_resultado_media">A sua média semestral foi de ${mediaSemestral.toFixed(2)}</p>
                 <p class="modal_resultado_exame_final"> Você precisa de ${exameFinal.toFixed(2)} para passar</p>`;
         } else {
             //reprovado
             resultado.innerHTML = `
                 <h2 class="modal_mensagem" >Você foi:</h2>        
-                <h3 class="modal_resultado_semestre resultado_aprovado">REPROVADO</h3>
+                <h3 class="modal_resultado_semestre resultado_reprovado">REPROVADO</h3>
                 <p class="modal_resultado_media">A sua média semestral foi de ${mediaSemestral.toFixed(2)}</p>`;
         }
         modal.showModal();
