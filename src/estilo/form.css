@@ -25,3 +25,10 @@
     border-radius: 20px;
     border: none;
 }
+
+.msgErro {
+    width: 70vw;
+    height: 4rem;
+    word-wrap: break-word;
+    text-align: center;
+}
