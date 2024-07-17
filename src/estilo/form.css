@@ -1,6 +1,5 @@
 /* @media (max-width: 480px){ */
 .form_notas{
-    background-color: brown;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -11,20 +10,41 @@
 }
 
 .input_notas{
-    width: 90vw;
-    background-color: aqua;
-    border: none;
+    width: 80vw;
+    border: solid 0.5px #000F08;
     border-radius: 20px;
     height: 2.5rem;
+    padding-left: 5vw;
+}
+
+.input_notas::placeholder {
+    color: #36558F;
+    opacity: 1;
+    transition: 300ms;
+}
+
+.input_notas:focus::placeholder {
+    color: #000F08;
+    opacity: 0.5;
 }
 
 .botao_notas{
+    background-color: #416788;
+    color: #FBF5F3;
     width: 25vw;
     height: 5vh;
     margin: 1rem auto;
     border-radius: 20px;
-    border: none;
+    border: solid 2px #36558F;
+    transition: 50ms;
 }
+
+.botao_notas:active/*:hover*/ {
+    background-color: #36558F;
+    color: #FBF5F3;
+    border: solid 2px #000F08;
+}
+
 
 .msgErro {
     width: 70vw;
