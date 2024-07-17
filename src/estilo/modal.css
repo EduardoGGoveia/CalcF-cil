@@ -5,7 +5,6 @@
     right: 1rem;
     top: 15vh;
     display: none;
-    background-color: coral;
     flex-direction: column;
     border-radius: 20px;
     border: none;
@@ -14,6 +13,34 @@
     align-items: center;
     height: 60vh;
     width: 80vw;
+}
+
+.modal_mensagem {
+
+}
+
+.modal_resultado_semestre {
+
+}
+
+.modal_resultado_media {
+
+}
+
+.modal_resultado_exame_final {
+
+}
+
+.resultado_aprovado {
+
+}
+
+.resultado_exame_final {
+
+}
+
+.resultado_reprovado {
+
 }
 
 .botao-confirma_modal_resultado{

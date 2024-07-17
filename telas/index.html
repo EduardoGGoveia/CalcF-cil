@@ -9,29 +9,32 @@
     <link rel="stylesheet" href="../src/estilo/main.css">
     <link rel="stylesheet" href="../src/estilo/form.css">
     <link rel="stylesheet" href="../src/estilo/modal.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div>
         <header class="header">
-            <p class="titulo_header">CalcFácil</p>
-            <img src="" alt="" class="img_header">
+            <!-- <p class="titulo_header">CalcFácil</p> -->
+            <img src="../src/imagens/logo-CalcFacil.png" alt="Logo da ferramenta CalcFácil" class="img_header">
         </header>
         <main class="container_notas">
             <h2>Insira suas Notas</h2>
             <form class="form_notas">
-                <input type="number" name="nota1" class="input_notas" id="n1">
-                <input type="number" name="nota2" class="input_notas" id="n2">
-                <input type="number" name="nota3" class="input_notas" id="n3">                    
+                <input type="number" name="nota1" class="input_notas" id="n1" placeholder="Nota 01">
+                <input type="number" name="nota2" class="input_notas" id="n2" placeholder="Nota 02">
+                <input type="number" name="nota3" class="input_notas" id="n3" placeholder="Nota 03">                    
                 <input type="button" class="botao_notas" value="Calcular">
             </form>
         </main>
     </div>
     <dialog class="modal_resultado" id="modal">            
-        <h3 class="titulo-media_modal_resultado" id="titulo_media">MÉDIA SEMESTRAL:</h3>
-        <p class="resultado-meda_modal_resultado" id="resultado_media">Resultado</p>
-        <h3 class="resultado-aalise_modal_resultado" id="titulo_resultado">RESULTADO FINAL</h3>
-        <p class="resultado-final_modal_resultado" id="resultado_resultado">Passou, reprovou ou prova final</p>
-        <input type="button" value="Ok" class="botao-confirma_modal_resultado">
+        <div id="resultado" class="resultado">            
+        </div>
+        <input type="button" value="Ok" class="botao_confirma_modal_resultado">
     </dialog>
 </body>
 </html>
