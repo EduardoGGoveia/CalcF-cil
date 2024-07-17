@@ -1,10 +1,12 @@
 .modal_resultado {
+    background-color: #36558F;
+    color: #FBF5F3;
     position: fixed;
     z-index: 100;
     left: 1rem;
     right: 1rem;
     top: 15vh;
-    display: none;
+    display: flex;
     flex-direction: column;
     border-radius: 20px;
     border: none;
@@ -13,6 +15,15 @@
     align-items: center;
     height: 60vh;
     width: 80vw;
+    font-family: 'Quicksand',Tahoma, Verdana, sans-serif;
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
 }
 
 .modal_mensagem {
@@ -43,11 +54,20 @@
 
 }
 
-.botao-confirma_modal_resultado{
+.botao_confirma_modal_resultado{
+    background-color: #000F08;
+    color: #FBF5F3;
     width: 25vw;
     height: 5vh;
     margin: 1rem auto;
     border-radius: 20px;
     border: none;
     flex-grow: 0.1;
+    transition: 50ms;
+}
+
+.botao_confirma_modal_resultado:active/*:hover*/ {
+    background-color: #36558F;
+    color: #FBF5F3;
+    border: solid 2px #000F08;
 }
