@@ -11,8 +11,6 @@ const campoN2 = document.querySelector('#n2');
 const campoN3 = document.querySelector('#n3');
 const resultado = document.querySelector('#resultado');
 
-campoN1.addEventListener('change', )
-
 function mostraResultado() {
     const modal = document.querySelector("#modal");
     if(validaCampo(campoN1) && validaCampo(campoN2) && validaCampo(campoN3)) {
@@ -66,7 +64,6 @@ function validaCampo(campo) {
 
 function calculaMediaSemetral(campo1, campo2, campo3) {
     let soma = parseFloat(campo1.value) + parseFloat(campo2.value) + parseFloat(campo3.value);
-    console.log(soma)
     let mediaSemestral = soma/3;
     return mediaSemestral;
 }
