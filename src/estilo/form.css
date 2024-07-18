@@ -49,6 +49,8 @@
 .msgErro {
     width: 70vw;
     height: 4rem;
+    font-weight: 500;
     word-wrap: break-word;
     text-align: center;
+    color: #B06161;
 }

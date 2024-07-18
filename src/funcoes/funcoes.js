@@ -19,25 +19,26 @@ function mostraResultado() {
         let mediaSemestral = calculaMediaSemetral(campoN1, campoN2, campoN3);
         if (mediaSemestral >= 7.0) {
             //passou
-            resultado.innerHTML += `
+            resultado.innerHTML = `
                 <h2 class="modal_mensagem" >Você foi:</h2>        
                 <h3 class="modal_resultado_semestre resultado_aprovado">APROVADO</h3>
-                <p class="modal_resultado_media">A sua média semestral foi de ${mediaSemestral.toFixed(2)}</p>`;
+                <p class="modal_resultado_media">A sua média semestral foi de <span>${mediaSemestral.toFixed(2)}</span>.</p>`;
         } else if (mediaSemestral > 3.0) {
             //exame final
-            let exameFinal = calculaExameFinal(mediaSemestral.toFixed(2));
+            let exameFinal = calculaExameFinal(mediaSemestral);
             resultado.innerHTML = `
                 <h2 class="modal_mensagem" >Você está de:</h2>        
                 <h3 class="modal_resultado_semestre resultado_exame_final">EXAME FINAL</h3>
-                <p class="modal_resultado_media">A sua média semestral foi de ${mediaSemestral.toFixed(2)}</p>
-                <p class="modal_resultado_exame_final"> Você precisa de ${exameFinal.toFixed(2)} para passar</p>`;
+                <p class="modal_resultado_media">A sua média semestral foi de <span>${mediaSemestral.toFixed(2)}</span>.</p>
+                <p class="modal_resultado_exame_final"> Você precisa de <u class="resultado_exame_final">${exameFinal.toFixed(2)}</u> para passar.</p>`;
         } else {
             //reprovado
             resultado.innerHTML = `
                 <h2 class="modal_mensagem" >Você foi:</h2>        
                 <h3 class="modal_resultado_semestre resultado_reprovado">REPROVADO</h3>
-                <p class="modal_resultado_media">A sua média semestral foi de ${mediaSemestral.toFixed(2)}</p>`;
+                <p class="modal_resultado_media">A sua média semestral foi de <span>${mediaSemestral.toFixed(2)}</span>.</p>`;
         }
+        modal.style.display = 'flex';
         modal.showModal();
     } else {
         msgError.style.display = 'block';
@@ -46,6 +47,10 @@ function mostraResultado() {
 }
 
 function confirmaModal() {
+    modal.style.display = '';
+    limpaCampo(campoN1);
+    limpaCampo(campoN2);
+    limpaCampo(campoN3);
     modal.close();
 }
 
@@ -64,6 +69,10 @@ function calculaMediaSemetral(campo1, campo2, campo3) {
     console.log(soma)
     let mediaSemestral = soma/3;
     return mediaSemestral;
+}
+
+function limpaCampo(campo) {
+    campo.value = '';
 }
 
 function calculaExameFinal(mediaSemestral) {return (10 - mediaSemestral)};
