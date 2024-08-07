@@ -1,6 +1,11 @@
-.container_notas{
+.container {
+    /* width: 100vw; */
+}
+
+.container_notas {
     background-color: #00A388;
     height: 85vh;
+    width: 100%;
     color: #FBF5F3;
     display: flex;
     flex-direction: column;
@@ -14,3 +19,32 @@
     font-size: 1.5rem;
 }
 
+
+@media (min-width: 460px) {
+
+    .container {
+        background-color: #FBF5F3;
+        background: rgb(75,173,157);
+        background: linear-gradient(45deg, rgba(75,173,157,1) 9%, rgba(251,245,243,1) 70%, rgba(54,85,143,1) 100%);
+        height: 100vh;
+    }
+    
+    .container_notas {
+        height: 70vh;
+        width: 80%;
+        margin: 1rem auto;
+        border-radius: 20px;
+    }
+
+}
+
+
+@media (min-width: 1024px) {
+    
+    .container_notas {
+        width: 40%;
+    }
+
+}
+
+    

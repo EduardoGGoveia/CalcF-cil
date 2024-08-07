@@ -1,4 +1,3 @@
-/* @media (max-width: 480px){ */
 .form_notas{
     display: flex;
     flex-direction: column;
@@ -52,5 +51,40 @@
     font-weight: 500;
     word-wrap: break-word;
     text-align: center;
-    color: #B06161;
+    color: #753f3f;
+}
+
+
+@media (min-width: 460px) {
+    
+    .input_notas {
+        width: 60%;
+        padding-left: 2%;
+    }
+
+    .msgErro {
+        width: 65%;
+    }
+
+    .botao_notas {
+        width: 20%;
+    }
+
+}
+
+
+@media (min-width: 1024px) {
+    
+    .input_notas {
+        width: 30%;
+    }
+
+    .msgErro {
+        width: 40%;
+    }
+
+    .botao_notas {
+        width: 10%;
+    }
+
 }
